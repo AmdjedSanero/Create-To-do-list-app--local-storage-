@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.container {
+  margin: 30px 15px;
+  display: flex;
+  flex-direction: column;
+}
+.container .box-top {
+  background-color: #ececec;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+}
+.container .box-bottom {
+  background-color: #ececec;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+}
+.container .box-top .text-input {
+  background-color: white;
+  flex: 1;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  outline-color: orangered;
+}
+.container .box-top span {
+  display: flex;
+  height: 40px;
+  border-radius: 10px;
+  background-color: orangered;
+  color: white;
+  width: 100px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.container .box-bottom div {
+  display: flex;
+  background-color: white;
+  font-size: 20px;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex-direction: row;
+  align-items: center;
+}
+.container .box-bottom div::target-text {
+  flex: 1;
+}
+.container .box-bottom div.done {
+  opacity: 0.5;
+}
+.container .box-bottom span {
+  background-color: red;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
